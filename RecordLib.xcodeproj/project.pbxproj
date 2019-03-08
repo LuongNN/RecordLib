@@ -15,6 +15,7 @@
 		8174D230223274D00067C848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8174D22E223274D00067C848 /* Main.storyboard */; };
 		8174D232223274D50067C848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8174D231223274D50067C848 /* Assets.xcassets */; };
 		8174D235223274D50067C848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8174D233223274D50067C848 /* LaunchScreen.storyboard */; };
+		8174D23B22327BD00067C848 /* RecordLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8174D23A22327BD00067C848 /* RecordLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		8174D231223274D50067C848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8174D234223274D50067C848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8174D236223274D50067C848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8174D23A22327BD00067C848 /* RecordLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				8174D20D22326FA40067C848 /* RecordLib.h */,
 				8174D20E22326FA40067C848 /* Info.plist */,
+				8174D23A22327BD00067C848 /* RecordLib.swift */,
 			);
 			path = RecordLib;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					8174D20922326FA30067C848 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					8174D21222326FA40067C848 = {
 						CreatedOnToolsVersion = 10.0;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8174D23B22327BD00067C848 /* RecordLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		8174D21F22326FA40067C848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seesaa.RecordLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		8174D22022326FA40067C848 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		8174D22222326FA40067C848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RecordLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		8174D22322326FA40067C848 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RecordLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
